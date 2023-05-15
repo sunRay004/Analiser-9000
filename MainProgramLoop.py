@@ -1,15 +1,18 @@
 import re
 
-##file1 = open("C:\Analiser 9000\Text.txt","a+")
-##print("start")
-##for x in file1.readlines():
-##    file1.read(x)
+with open("Text.txt", "r") as activeFile:
+    all_lines = activeFile.readlines()
 
+titles = []
+sequences = []
 
+for line in all_lines:
+    if "." in line[0]:
+        titles.append(line.rstrip("\n"))
+        all_lines.remove(line)
 
-with open("C:\Analiser 9000\Text.txt","a+") as core:
-    dung = re.sub(r",([^,\n]*,)?", r":\1", core.read())
-    print(dung)
+for lines in all_lines:
+    sequences.append(lines.rstrip("\n"))
 
-##file1.close
-
+print(titles)
+print(sequences)
