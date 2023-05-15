@@ -4,8 +4,7 @@ saveExpression = "title"
 ## just a while loop
 running = True
 while running:
-    print("launched, type help to view commands")
-    inp = input(":")
+    inp = input("launched, type help to view commands, imput here: ")
     
     ## help printout
     if inp == "help" :
