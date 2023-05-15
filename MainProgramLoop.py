@@ -1,18 +1,37 @@
-import re
+saveExpression = "title"
 
-with open("Text.txt", "r") as activeFile:
-    all_lines = activeFile.readlines()
+## this desides what to call and what to do
+## just a while loop
+running = True
+while running:
+    print("launched, type help to view commands")
+    inp = input(":")
+    
+    ## help printout
+    if inp.lower() == "help" :
+        print("RegEx: lets you change the regular expresion that transfers files from")
+        print("useEx: uses the given or default regular expresion to set up the files")
+        print("commands:")
+        print("commands:")
+        print("commands:")
+        print("commands:")
+        print("commands:")
+        print("commands:")
+    
+    ## RegEx adjustment to set the expression
+    if inp.lower == "regex" :
+        saveExpression = input("lines containing ___ should be saved: ")
 
-titles = []
-sequences = []
+    ## UseEx uses the expression given to 
+    if inp.lower == "useex" :
+        #makes allLines array, has all lines
+        with open("BrowserHistory.txt", "r") as activeFile:
+            allLines = activeFile.readlines()
 
-for line in all_lines:
-    if "." in line[0]:
-        titles.append(line.rstrip("\n"))
-        all_lines.remove(line)
+        ProssesedArray = []
 
-for lines in all_lines:
-    sequences.append(lines.rstrip("\n"))
-
-print(titles)
-print(sequences)
+        for line in allLines:
+            if saveExpression in line:
+                ProssesedArray.append(line.rstrip("\n"))
+                f = open("ProssesedText.txt", "a")
+                f.write(line)
