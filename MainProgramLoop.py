@@ -8,7 +8,7 @@ while running:
     inp = input(":")
     
     ## help printout
-    if inp.lower() == "help" :
+    if inp == "help" :
         print("RegEx: lets you change the regular expresion that transfers files from")
         print("useEx: uses the given or default regular expresion to set up the files")
         print("commands:")
