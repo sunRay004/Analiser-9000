@@ -1,4 +1,8 @@
+import re
+import sys
+
 saveExpression = "title"
+ProssesedArray = []
 
 ## this desides what to call and what to do
 ## just a while loop
@@ -8,29 +12,41 @@ while running:
     
     ## help printout
     if inp == "help" :
-        print("RegEx: lets you change the regular expresion that transfers files from")
-        print("useEx: uses the given or default regular expresion to set up the files")
-        print("commands:")
+        print("regex: lets you change the regular expresion that transfers files from")
+        print("useex: uses the given or default regular expresion to set up the files")
+        print("PTclear: clears the ProssesedText.txt file")
         print("commands:")
         print("commands:")
         print("commands:")
         print("commands:")
         print("commands:")
     
-    ## RegEx adjustment to set the expression
-    if inp.lower == "regex" :
+    ## change regex
+    if inp == "regex" :
         saveExpression = input("lines containing ___ should be saved: ")
 
-    ## UseEx uses the expression given to 
-    if inp.lower == "useex" :
+    ## cleans the data
+    if inp == "useex" :
         #makes allLines array, has all lines
-        with open("BrowserHistory.txt", "r") as activeFile:
+
+        ## The people that insert emojis into their website titles deserve life in prison
+
+        with open("BrowserHistory.txt", "r", encoding='utf-8', errors='replace') as activeFile:
+            allLines = []    
             allLines = activeFile.readlines()
 
-        ProssesedArray = []
+        ## I change my mind, it should be death
 
         for line in allLines:
-            if saveExpression in line:
+            if re.search(saveExpression, line) != "" :
                 ProssesedArray.append(line.rstrip("\n"))
-                f = open("ProssesedText.txt", "a")
+                f = open("ProssesedText.txt", "a", errors='replace')
                 f.write(line)
+        print(ProssesedArray)
+    
+    ## clears the prossesed text
+    if inp == "PTclear" :
+        delet = open("ProssesedText.txt",'w')
+        delet.close()
+        ProssesedArray = []
+
