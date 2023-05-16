@@ -1,5 +1,6 @@
 import re
 import sys
+from collections import Counter
 
 saveExpression = "title"
 ProssesedArray = []
@@ -15,8 +16,8 @@ while running:
         print("regex: lets you change the regular expresion that transfers files from")
         print("useex: uses the given or default regular expresion to set up the files")
         print("PTclear: clears the ProssesedText.txt file")
-        print("commands:")
-        print("commands:")
+        print("PAclear: clears the Prossesed array")
+        print("allclear: clears all prossesed files")
         print("commands:")
         print("commands:")
         print("commands:")
@@ -29,24 +30,44 @@ while running:
     if inp == "useex" :
         #makes allLines array, has all lines
 
-        ## The people that insert emojis into their website titles deserve life in prison
-
         with open("BrowserHistory.txt", "r", encoding='utf-8', errors='replace') as activeFile:
             allLines = []    
             allLines = activeFile.readlines()
 
-        ## I change my mind, it should be death
-
         for line in allLines:
             if re.search(saveExpression, line) != "" :
-                ProssesedArray.append(line.rstrip("\n"))
+                ProssesedArray.append(line)
                 f = open("ProssesedText.txt", "a", errors='replace')
                 f.write(line)
         print(ProssesedArray)
+        activeFile.close()
     
-    ## clears the prossesed text
+    ## clears stuff that i dont want
     if inp == "PTclear" :
+        delet = open("ProssesedText.txt",'w')
+        delet.close()
+
+    if inp == "PAclear" :
+        ProssesedArray = []
+
+    if inp == "allclear":
         delet = open("ProssesedText.txt",'w')
         delet.close()
         ProssesedArray = []
 
+    #sorts websites in asending order
+    if inp == "count" :
+        Counter(ProssesedArray)
+        print(ProssesedArray)
+        print(Counter(ProssesedArray))
+
+    ## transfers text betwen the two
+    if inp == "TTA":
+        with open("ProssesedText.txt", "r") as activeFile:
+            ProssesedArray = activeFile.readlines()
+            activeFile.close()
+    
+    if inp == "ATT":
+        with open("ProssesedText.txt", "a+") as activeFile:
+            activeFile.writelines(ProssesedArray)
+    
