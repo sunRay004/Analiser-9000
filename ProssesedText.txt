@@ -1,9 +1,0 @@
-aaa
-bbb
-ccc
-aaa
-aaa
-ccc
-ccc
-aaa
-bbb

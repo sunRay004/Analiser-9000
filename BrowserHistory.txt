@@ -1,0 +1,155 @@
+this data contains the contents of the borwser history file
+to get this file, go to https://takeout.google.com/settings/takeout
+under chrome select "all chrome data included", set it to only include BrowserHistory
+export only browser history, unless you want to customise the regex, but default program works with the browser history
+
+
+    "Browser History": 
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition": "LINK",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684116320000332
+},
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition": "LINK",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684116255518526
+},
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition": "LINK",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684116238718910
+},
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition": "LINK",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684116225710217
+},
+        {
+            "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+            "page_transition": "LINK",
+            "title": "All Mail - Gmail",
+            "url": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#all",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684116195854937
+},
+        {
+            "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+            "page_transition": "LINK",
+            "title": "Inbox (277) - Gmail",
+            "url": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684116192422951
+},
+        {
+            "page_transition": "TYPED",
+            "title": "New Tab",
+            "url": "chrome://newtab/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115940149266
+},
+        {
+            "favicon_url": "https://www.youtube.com/s/desktop/c1d331ff/img/favicon_32x32.png",
+            "page_transition": "LINK",
+            "title": "(24) YouTube",
+            "url": "https://www.youtube.com/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115630516014
+},
+        {
+            "favicon_url": "https://www.youtube.com/s/desktop/c1d331ff/img/favicon_32x32.png",
+            "page_transition": "LINK",
+            "title": "(24) How to push visual studio code project to github | Tech Projects - YouTube",
+            "url": "https://www.youtube.com/watch?v=vRxfnHtCxEo",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115630512809
+},
+        {
+            "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+            "page_transition": "LINK",
+            "title": "Inbox (277) - Gmail",
+            "url": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115499945675
+},
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition": "LINK",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115433409975
+},
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition": "LINK",
+            "title": "Manage your exports",
+            "url": "https://takeout.google.com/takeout/downloads",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115424164358
+},
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition": "LINK",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/settings/takeout",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115422491026
+},
+        {
+            "page_transition": "GENERATED",
+            "title": "google takeout - Google Search",
+            "url": "https://www.google.com/search?q=google+takeout&oq=google+ta&aqs=chrome.0.69i59j69i57j0i512l2j0i10i131i433i512j69i60l2j5.1365j0j7&sourceid=chrome&ie=UTF-8",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115420432839
+},
+        {
+            "page_transition": "TYPED",
+            "title": "New Tab",
+            "url": "chrome://newtab/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115411402096
+},
+        {
+            "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+            "page_transition": "LINK",
+            "title": "Inbox (278) - Gmail",
+            "url": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115322706504
+},
+        {
+            "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+            "page_transition": "LINK",
+            "title": "All Mail - Gmail",
+            "url": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#all",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115301200358
+},
+        {
+            "page_transition": "TYPED",
+            "title": "New Tab",
+            "url": "chrome://newtab/",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115205011500
+},
+        {
+            "favicon_url": "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196",
+            "page_transition": "LINK",
+            "title": "Python: How to to save different lines of a text file into a list, to then print each element of the list individually - Stack Overflow",
+            "url": "https://stackoverflow.com/questions/74003730/python-how-to-to-save-different-lines-of-a-text-file-into-a-list-to-then-print",
+            "client_id": "PjbXynHh5quP5mlsGZeZ1w==",
+            "time_usec": 1684115196621949
+},
