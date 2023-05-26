@@ -1,0 +1,6 @@
+takeout.google.com 7
+mail.google.com 5
+newtab 3
+www.youtube.com 2
+www.google.com 1
+stackoverflow.com 1
